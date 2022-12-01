@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div>
+      <div>
+        <label for="wall">Wall <input type="radio" name="mode" id="wall" value="wall" checked/></label>
+        <label for="reward">Reward <input type="radio" name="mode" id="reward" value="reward" /></label>
+      </div>
+      <canvas
+        id="main-canvas"
+        width="800"
+        height="800"
+        style="border: 1px solid black"
+      ></canvas>
+    </div>
+    <script type="module" src="/src/drawTrack.ts"></script>
+  </body>
+</html>
